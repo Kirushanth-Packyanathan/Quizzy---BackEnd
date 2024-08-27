@@ -21,6 +21,7 @@ public class SecurityConfig {
 //                .formLogin(Customizer.withDefaults());
                 .oauth2Login(oauth->oauth.defaultSuccessUrl("/home"));
         return http.build();
+
     }
 
 }
