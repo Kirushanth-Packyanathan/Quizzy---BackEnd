@@ -23,6 +23,7 @@ public class QuestionServiceImpl implements QuestionService{
 
     @Override
     public Question createNewQuestion(QuestionDTO questionDTO) {
+
         Question question = new Question();
         question.setQuestion(questionDTO.getQuestion());
         question.setSubject(questionDTO.getSubject());

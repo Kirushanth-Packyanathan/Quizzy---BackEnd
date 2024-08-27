@@ -27,6 +27,7 @@ public class QuestionController {
         Question createdQuestion = questionService.createNewQuestion(question);
 
         QuestionDTO newQuestion = QuestionDTO.builder()
+                .id(createdQuestion.getId())
                 .question(createdQuestion.getQuestion())
                 .questionType(createdQuestion.getQuestionType())
                 .choices(createdQuestion.getChoices())
@@ -133,6 +134,7 @@ public class QuestionController {
 
         List<QuestionDTO> questionDTOs = randomQuestions.stream()
                 .map(question -> QuestionDTO.builder()
+                        .id(question.getId())
                         .question(question.getQuestion())
                         .questionType(question.getQuestionType())
                         .choices(question.getChoices())
@@ -144,6 +146,4 @@ public class QuestionController {
 
         return ResponseEntity.ok(questionDTOs);
     }
-
-
 }
