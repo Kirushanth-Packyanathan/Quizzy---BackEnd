@@ -9,5 +9,3 @@ public class StudentDTO {
     private String email;
     // Exclude password from DTO for security reasons
 }
-
-
