@@ -17,4 +17,5 @@ public class AdminService {
     public Admin saveAdmin(Admin admin) {
         return adminRepository.save(admin);
     }
+
 }
