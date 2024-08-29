@@ -24,5 +24,6 @@ public class SecurityConfig {
                         .defaultSuccessUrl("http://localhost:3000/", true) // Redirect after successful login
                 );
         return http.build();
+
     }
 }
