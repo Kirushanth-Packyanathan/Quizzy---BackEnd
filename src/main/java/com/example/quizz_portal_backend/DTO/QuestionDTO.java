@@ -18,5 +18,3 @@ public class QuestionDTO {
     private List<String> choices;
     private Set<String> correctAnswers;
 }
-
-
